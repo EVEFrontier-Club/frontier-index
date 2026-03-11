@@ -1,0 +1,10 @@
+class: PlayerAliasDao
+table: player_aliases
+fields:
+  playerId: int, relation(parent=players)
+  alias: String
+  sourceId: int?, relation(parent=sources)
+  linkedAt: DateTime
+indexes:
+  player_aliases_idx:
+    fields: playerId, alias

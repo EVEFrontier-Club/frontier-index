@@ -1,0 +1,14 @@
+class: ScoreDao
+table: scores
+fields:
+  playerId: int, relation(parent=players)
+  scoreType: ScoreTypeDao
+  scoreValue: double
+  components: Map<String, double>
+  rawComponents: String?
+  computedAt: DateTime
+  confidence: double
+  explanation: String?
+indexes:
+  score_idx:
+    fields: playerId, scoreType

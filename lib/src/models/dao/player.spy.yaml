@@ -1,0 +1,12 @@
+class: PlayerDao
+table: players
+fields:
+  playerId: String
+  displayName: String
+  createdAt: DateTime
+  lastSeen: DateTime?
+  metadata: String
+indexes:
+  player_idx:
+    fields: playerId
+    unique: true

@@ -1,0 +1,7 @@
+enum: ScoreTypeDao
+serialized: byName
+default: unknown
+values:
+  - unknown
+  - trust
+  - corpReliability

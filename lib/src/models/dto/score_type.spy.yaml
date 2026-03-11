@@ -1,0 +1,7 @@
+enum: ScoreTypeDto
+serialized: byName
+default: unknown
+values:
+  - unknown
+  - trust
+  - untrust

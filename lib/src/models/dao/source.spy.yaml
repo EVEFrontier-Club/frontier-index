@@ -1,0 +1,13 @@
+class: SourceDao
+table: sources
+fields:
+  sourceKey: String
+  type: SourceTypeDao
+  trustLevel: double
+  config: String?
+  lastSync: DateTime?
+  enabled: bool
+indexes:
+  sources_idx:
+    fields: sourceKey
+    unique: true

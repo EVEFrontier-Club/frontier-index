@@ -1,0 +1,11 @@
+class: ScoreHistoryDao
+table: score_history
+fields:
+  playerId: int, relation(parent=players)
+  scoreType: ScoreTypeDao
+  scoreValue: double
+  computedAt: DateTime
+  components: Map<String, double>
+indexes:
+  score_history_idx:
+    fields: playerId, scoreType, computedAt

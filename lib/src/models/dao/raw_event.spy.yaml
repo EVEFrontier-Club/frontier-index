@@ -1,0 +1,14 @@
+class: RawEventDao
+table: raw_events
+fields:
+  eventUuid: String
+  playerId: int, relation(parent=players)
+  sourceId: int, relation(parent=sources)
+  eventType: String
+  payload: String
+  receivedAt: DateTime
+  processed: bool
+  processingError: String?
+indexes:
+  raw_events_idx:
+    fields: playerId, sourceId, processingError

@@ -1,0 +1,15 @@
+class: NormalizedMetricDao
+table: normalized_metrics
+fields:
+  playerId: int, relation(parent=players)
+  metricKey: String
+  rawValue: double?
+  normalizedValue: double?
+  unit: String?
+  computedAt: DateTime
+  confidence: double
+  sourceKeys: List<int>?
+  details: String?
+indexes:
+  normalized_metrics_idx:
+    fields: playerId, metricKey

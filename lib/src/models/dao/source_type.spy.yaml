@@ -1,0 +1,8 @@
+enum: SourceTypeDao
+serialized: byName
+default: unknown
+values:
+  - unknown
+  - publicApi
+  - thirdParty
+  - upload
