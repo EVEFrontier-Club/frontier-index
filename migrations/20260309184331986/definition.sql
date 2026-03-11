@@ -240,10 +240,10 @@ ALTER TABLE ONLY "serverpod_query_log"
 
 
 --
--- MIGRATION VERSION FOR trust_index
+-- MIGRATION VERSION FOR evefrontier_index_module
 --
 INSERT INTO "serverpod_migrations" ("module", "version", "timestamp")
-    VALUES ('trust_index', '20260309184331986', now())
+    VALUES ('evefrontier_index_module', '20260309184331986', now())
     ON CONFLICT ("module")
     DO UPDATE SET "version" = '20260309184331986', "timestamp" = now();
 

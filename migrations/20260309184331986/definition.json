@@ -1,6 +1,6 @@
 {
   "__className__": "serverpod.DatabaseDefinition",
-  "moduleName": "trust_index",
+  "moduleName": "evefrontier_index_module",
   "tables": [
     {
       "__className__": "serverpod.TableDefinition",
@@ -1325,7 +1325,7 @@
   "installedModules": [
     {
       "__className__": "serverpod.DatabaseMigrationVersion",
-      "module": "trust_index",
+      "module": "evefrontier_index_module",
       "version": "20260309184331986"
     },
     {

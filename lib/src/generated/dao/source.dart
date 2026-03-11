@@ -86,7 +86,7 @@ abstract class SourceDao
   @override
   Map<String, dynamic> toJson() {
     return {
-      '__className__': 'trust_index.SourceDao',
+      '__className__': 'evefrontier_index_module.SourceDao',
       if (id != null) 'id': id,
       'sourceKey': sourceKey,
       'type': type.toJson(),
@@ -100,7 +100,7 @@ abstract class SourceDao
   @override
   Map<String, dynamic> toJsonForProtocol() {
     return {
-      '__className__': 'trust_index.SourceDao',
+      '__className__': 'evefrontier_index_module.SourceDao',
       if (id != null) 'id': id,
       'sourceKey': sourceKey,
       'type': type.toJson(),

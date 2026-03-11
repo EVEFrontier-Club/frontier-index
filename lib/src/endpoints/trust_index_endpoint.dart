@@ -1,6 +1,6 @@
 import 'package:serverpod/serverpod.dart';
-import 'package:evefrontier_index/src/generated/dao/raw_event.dart';
-import 'package:evefrontier_index/src/generated/dao/score_type.dart';
+import 'package:evefrontier_index_module/src/generated/dao/raw_event.dart';
+import 'package:evefrontier_index_module/src/generated/dao/score_type.dart';
 import '../services/ingest_service.dart';
 import '../services/score_service.dart';
 

@@ -11,7 +11,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:serverpod/serverpod.dart' as _i1;
-import 'package:evefrontier_index/src/generated/protocol.dart' as _i2;
+import 'package:evefrontier_index_module/src/generated/protocol.dart' as _i2;
 
 abstract class NormalizedMetricDao
     implements _i1.TableRow<int?>, _i1.ProtocolSerialization {
@@ -109,7 +109,7 @@ abstract class NormalizedMetricDao
   @override
   Map<String, dynamic> toJson() {
     return {
-      '__className__': 'trust_index.NormalizedMetricDao',
+      '__className__': 'evefrontier_index_module.NormalizedMetricDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'metricKey': metricKey,
@@ -126,7 +126,7 @@ abstract class NormalizedMetricDao
   @override
   Map<String, dynamic> toJsonForProtocol() {
     return {
-      '__className__': 'trust_index.NormalizedMetricDao',
+      '__className__': 'evefrontier_index_module.NormalizedMetricDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'metricKey': metricKey,

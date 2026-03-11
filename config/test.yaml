@@ -32,7 +32,7 @@ webServer:
 database:
   host: localhost
   port: 9090
-  name: trust_index_test
+  name: evefrontier_index_module_test
   user: postgres
 
 # This is the setup for your Redis test instance.

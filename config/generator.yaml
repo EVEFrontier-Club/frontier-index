@@ -1,5 +1,5 @@
 type: module
-nickname: trust_index
+nickname: evefrontier_index_module
 
-client_package_path: ../client
+client_package_path: client
 server_test_tools_path: test/integration/test_tools

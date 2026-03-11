@@ -45,7 +45,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'normalized_metrics',
       dartName: 'NormalizedMetricDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -159,7 +159,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'player_aliases',
       dartName: 'PlayerAliasDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -253,7 +253,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'players',
       dartName: 'PlayerDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -328,7 +328,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'raw_events',
       dartName: 'RawEventDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -450,7 +450,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'score_history',
       dartName: 'ScoreHistoryDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -544,7 +544,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'scores',
       dartName: 'ScoreDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -652,7 +652,7 @@ class Protocol extends _i1.SerializationManagerServer {
       name: 'sources',
       dartName: 'SourceDao',
       schema: 'public',
-      module: 'trust_index',
+      module: 'evefrontier_index_module',
       columns: [
         _i2.ColumnDefinition(
           name: 'id',
@@ -735,7 +735,7 @@ class Protocol extends _i1.SerializationManagerServer {
     if (data is! Map) return null;
     final className = data['__className__'] as String?;
     if (className == null) return null;
-    if (!className.startsWith('trust_index.')) return className;
+    if (!className.startsWith('evefrontier_index_module.')) return className;
     return className.substring(12);
   }
 
@@ -879,7 +879,10 @@ class Protocol extends _i1.SerializationManagerServer {
     if (className != null) return className;
 
     if (data is Map<String, dynamic> && data['__className__'] is String) {
-      return (data['__className__'] as String).replaceFirst('trust_index.', '');
+      return (data['__className__'] as String).replaceFirst(
+        'evefrontier_index_module.',
+        '',
+      );
     }
 
     switch (data) {
@@ -986,7 +989,7 @@ class Protocol extends _i1.SerializationManagerServer {
       targetTableDefinitions;
 
   @override
-  String getModuleName() => 'trust_index';
+  String getModuleName() => 'evefrontier_index_module';
 
   /// Maps any `Record`s known to this [Protocol] to their JSON representation
   ///

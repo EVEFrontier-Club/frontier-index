@@ -81,7 +81,7 @@ abstract class PlayerDao
   @override
   Map<String, dynamic> toJson() {
     return {
-      '__className__': 'trust_index.PlayerDao',
+      '__className__': 'evefrontier_index_module.PlayerDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'displayName': displayName,
@@ -94,7 +94,7 @@ abstract class PlayerDao
   @override
   Map<String, dynamic> toJsonForProtocol() {
     return {
-      '__className__': 'trust_index.PlayerDao',
+      '__className__': 'evefrontier_index_module.PlayerDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'displayName': displayName,

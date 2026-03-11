@@ -1,5 +1,5 @@
 import 'package:serverpod/server.dart';
-import 'package:evefrontier_index/src/generated/dao/player.dart';
+import 'package:evefrontier_index_module/src/generated/dao/player.dart';
 
 class PlayerUtils {
   static Future<PlayerDao?> getPlayerById(

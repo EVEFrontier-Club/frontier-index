@@ -1,6 +1,6 @@
 {
   "__className__": "serverpod.DatabaseDefinition",
-  "moduleName": "trust_index",
+  "moduleName": "evefrontier_index_module",
   "tables": [],
   "installedModules": [
     {

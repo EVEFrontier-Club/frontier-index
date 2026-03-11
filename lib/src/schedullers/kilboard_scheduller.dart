@@ -1,5 +1,5 @@
 import 'package:serverpod/server.dart';
-import 'package:evefrontier_index/evefrontier_index.dart';
+import 'package:evefrontier_index_module/evefrontier_index_module.dart';
 
 class KilboardScheduller extends FutureCall {
   Future<void> loadData(Session session) async {

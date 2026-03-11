@@ -97,7 +97,7 @@ abstract class RawEventDao
   @override
   Map<String, dynamic> toJson() {
     return {
-      '__className__': 'trust_index.RawEventDao',
+      '__className__': 'evefrontier_index_module.RawEventDao',
       if (id != null) 'id': id,
       'eventUuid': eventUuid,
       'playerId': playerId,
@@ -113,7 +113,7 @@ abstract class RawEventDao
   @override
   Map<String, dynamic> toJsonForProtocol() {
     return {
-      '__className__': 'trust_index.RawEventDao',
+      '__className__': 'evefrontier_index_module.RawEventDao',
       if (id != null) 'id': id,
       'eventUuid': eventUuid,
       'playerId': playerId,

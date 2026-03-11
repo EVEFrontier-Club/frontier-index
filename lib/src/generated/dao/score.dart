@@ -12,7 +12,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:serverpod/serverpod.dart' as _i1;
 import '../dao/score_type.dart' as _i2;
-import 'package:evefrontier_index/src/generated/protocol.dart' as _i3;
+import 'package:evefrontier_index_module/src/generated/protocol.dart' as _i3;
 
 abstract class ScoreDao
     implements _i1.TableRow<int?>, _i1.ProtocolSerialization {
@@ -103,7 +103,7 @@ abstract class ScoreDao
   @override
   Map<String, dynamic> toJson() {
     return {
-      '__className__': 'trust_index.ScoreDao',
+      '__className__': 'evefrontier_index_module.ScoreDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'scoreType': scoreType.toJson(),
@@ -119,7 +119,7 @@ abstract class ScoreDao
   @override
   Map<String, dynamic> toJsonForProtocol() {
     return {
-      '__className__': 'trust_index.ScoreDao',
+      '__className__': 'evefrontier_index_module.ScoreDao',
       if (id != null) 'id': id,
       'playerId': playerId,
       'scoreType': scoreType.toJson(),

@@ -14,9 +14,10 @@
 import 'package:serverpod_test/serverpod_test.dart' as _i1;
 import 'package:serverpod/serverpod.dart' as _i2;
 import 'dart:async' as _i3;
-import 'package:evefrontier_index/src/generated/future_calls.dart' as _i4;
-import 'package:evefrontier_index/src/generated/protocol.dart';
-import 'package:evefrontier_index/src/generated/endpoints.dart';
+import 'package:evefrontier_index_module/src/generated/future_calls.dart'
+    as _i4;
+import 'package:evefrontier_index_module/src/generated/protocol.dart';
+import 'package:evefrontier_index_module/src/generated/endpoints.dart';
 export 'package:serverpod_test/serverpod_test_public_exports.dart';
 
 /// Creates a new test group that takes a callback that can be used to write tests.

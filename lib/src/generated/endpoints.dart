@@ -11,8 +11,9 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:serverpod/serverpod.dart' as _i1;
-import '../endpoints/trust_index_endpoint.dart' as _i2;
-import 'package:evefrontier_index/src/generated/future_calls.dart' as _i3;
+import '../endpoints/evefrontier_index_module_endpoint.dart' as _i2;
+import 'package:evefrontier_index_module/src/generated/future_calls.dart'
+    as _i3;
 export 'future_calls.dart' show ServerpodFutureCallsGetter;
 
 class Endpoints extends _i1.EndpointDispatch {
@@ -23,7 +24,7 @@ class Endpoints extends _i1.EndpointDispatch {
         ..initialize(
           server,
           'trustIndex',
-          'trust_index',
+          'evefrontier_index_module',
         ),
     };
     connectors['trustIndex'] = _i1.EndpointConnector(
