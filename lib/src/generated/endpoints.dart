@@ -11,7 +11,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:serverpod/serverpod.dart' as _i1;
-import '../endpoints/evefrontier_index_module_endpoint.dart' as _i2;
+import '../endpoints/trust_index_endpoint.dart' as _i2;
 import 'package:evefrontier_index_module/src/generated/future_calls.dart'
     as _i3;
 export 'future_calls.dart' show ServerpodFutureCallsGetter;

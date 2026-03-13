@@ -45,7 +45,7 @@ class Protocol extends _i1.SerializationManager {
     final className = data['__className__'] as String?;
     if (className == null) return null;
     if (!className.startsWith('evefrontier_index_module.')) return className;
-    return className.substring(12);
+    return className.substring(25);
   }
 
   @override
